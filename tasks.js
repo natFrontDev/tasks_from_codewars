@@ -93,4 +93,25 @@ function countSmileys(arr) {
     return arr.filter(v=>v.match(/(:|;)(-|~)?(\)|D)/)).length
 }
 
+// 16. Range Extraction
+function solutions(list){
+    return list
+        .reduce(splitIntoRanges, [])
+        .map(convertToRange)
+        .join(",");
+}
+function splitIntoRanges(ranges, number) {
+    if (!ranges.length) {
+        ranges.push([number]);
+        return ranges;
+    }
+    let lastRange = ranges[ranges.length - 1];
+    let lastNumber = lastRange[lastRange.length - 1];
+    number === lastNumber + 1 ? lastRange.push(number) : ranges.push([number]);
+    return ranges;
+}
+function convertToRange(range) {
+    return range.length < 3 ? range.join(",") : range[0] + "-" + range[range.length - 1];
+}
+
 
