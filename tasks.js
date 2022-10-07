@@ -114,4 +114,17 @@ function convertToRange(range) {
     return range.length < 3 ? range.join(",") : range[0] + "-" + range[range.length - 1];
 }
 
+// 17. Total amount of points
+function points(games) {
+    let sum=0;
+    for (let i=0; i<games.length; ++i)
+    {
+        if (games[i][0]>games[i][2])
+            sum+=3;
+        if (games[i][0]===games[i][2])
+            sum+=1;
+    }
+    return sum;
+}
+
 
