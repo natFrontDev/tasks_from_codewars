@@ -88,3 +88,9 @@ function findEvenIndex(arr) {
     return -1;
 }
 
+// 15. Count the smiley faces!
+function countSmileys(arr) {
+    return arr.filter(v=>v.match(/(:|;)(-|~)?(\)|D)/)).length
+}
+
+
