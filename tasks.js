@@ -22,3 +22,10 @@ function makeUpperCase(str) {
 function greet(name){
     return `Hello, ${name} how are you doing today?`
 }
+
+// 6. 7 kya. In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number. highAndLow("1 2 -3 4 5");
+
+function highAndLow(numbers){
+    numbers = numbers.split(' ')
+    return `${Math.max(...numbers)} ${Math.min(...numbers)}`
+}
