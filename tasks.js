@@ -49,3 +49,14 @@ function isToday(date) {
 function solution(string) {
     return string.split(/(?=[A-Z])/).join(' ');
 }
+
+// 12. Product of consecutive Fib numbers
+function productFib(prod){
+    let n = 0;
+    let nPlus = 1;
+    while(n*nPlus < prod) {
+        nPlus = n + nPlus;
+        n = nPlus - n;
+    }
+    return [n, nPlus, n*nPlus===prod];
+}
