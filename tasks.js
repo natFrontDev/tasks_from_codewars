@@ -60,3 +60,13 @@ function productFib(prod){
     }
     return [n, nPlus, n*nPlus===prod];
 }
+
+// 13. Persistent Bugger.
+function persistence(num) {
+    let count = 0;
+    while(num.toString().length > 1){
+        num = num.toString().split('').reduce((acc,el) => acc *= +el,1)
+        count++
+    }
+    return count
+}
