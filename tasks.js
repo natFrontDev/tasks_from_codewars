@@ -13,3 +13,7 @@ function digitize(n) {
     return String(n).split('').map(Number).reverse()
 }
 
+// 4. Write a function which converts the input string to uppercase.
+function makeUpperCase(str) {
+    return str.toUpperCase()
+}
