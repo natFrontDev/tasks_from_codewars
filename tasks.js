@@ -37,3 +37,6 @@ function opposite(number) {
 // 8. Write a function to split a string and convert it into an array of words.
 const stringToArray = string => string.split(' ')
 
+// 9. You will be given an array a and a value x. All you need to do is check whether the provided array contains the value.
+const check = (a, x) => a.includes(x)
+
