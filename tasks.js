@@ -40,3 +40,8 @@ const stringToArray = string => string.split(' ')
 // 9. You will be given an array a and a value x. All you need to do is check whether the provided array contains the value.
 const check = (a, x) => a.includes(x)
 
+// 10. Is the date today
+
+function isToday(date) {
+    return new Date().toDateString() === date.toDateString();
+}
