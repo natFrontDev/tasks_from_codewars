@@ -33,3 +33,7 @@ function highAndLow(numbers){
 function opposite(number) {
     return -number;
 }
+
+// 8. Write a function to split a string and convert it into an array of words.
+const stringToArray = string => string.split(' ')
+
