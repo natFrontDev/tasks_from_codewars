@@ -24,8 +24,12 @@ function greet(name){
 }
 
 // 6. 7 kya. In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number. highAndLow("1 2 -3 4 5");
-
 function highAndLow(numbers){
     numbers = numbers.split(' ')
     return `${Math.max(...numbers)} ${Math.min(...numbers)}`
+}
+
+// 7. Very simple, given an integer or a floating-point number, find its opposite.
+function opposite(number) {
+    return -number;
 }
