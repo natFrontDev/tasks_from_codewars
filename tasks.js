@@ -41,7 +41,11 @@ const stringToArray = string => string.split(' ')
 const check = (a, x) => a.includes(x)
 
 // 10. Is the date today
-
 function isToday(date) {
     return new Date().toDateString() === date.toDateString();
+}
+
+// 11. Break camelCase
+function solution(string) {
+    return string.split(/(?=[A-Z])/).join(' ');
 }
